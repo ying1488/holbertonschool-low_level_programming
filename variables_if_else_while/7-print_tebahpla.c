@@ -11,7 +11,7 @@ int main(void)
 {
 	char alpha;
 
-	for (alpha = 'z'; alpha => 'a'; alpha--)
+	for (alpha = 'z'; alpha >= 'a'; alpha--)
 	{
 		putchar(alpha);
 	}
@@ -19,4 +19,4 @@ int main(void)
 	putchar('\n');
 
 	return (0);
-i}
+}
