@@ -4,7 +4,7 @@
 
 /**
  * main - Prints a text according number
- * print_alphabet_X10 - print alphabet 10 times
+ * print_alphabet_x10 - print alphabet 10 times
  * Return: Always (Success)
  */
 
