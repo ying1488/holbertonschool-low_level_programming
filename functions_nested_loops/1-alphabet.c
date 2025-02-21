@@ -4,7 +4,7 @@
 
 /**
  * main - Prints the alphabet, in lowercase
- * Description : print_alphabet prints the alphabet, in lowercase
+ * description : print_alphabet prints the alphabet, in lowercase
  * Return : Always 0.
  */
 
