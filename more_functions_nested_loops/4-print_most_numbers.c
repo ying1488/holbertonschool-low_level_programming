@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <string.h>
+#include "main.h"
 
 /**
  * print_most_numbers - Prints a text according number
@@ -12,10 +11,14 @@ void print_most_numbers(void)
 
 	for (x = 0 ; x <= 9 ; x++)
 	{
-		if (x != '2' && x != '4')
+		if (x == '2' || x == '4')
 		{
-			putchar(x + '0');
+			continue;
+		}
+		else
+		{
+			_putchar(x + '0');
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 }
