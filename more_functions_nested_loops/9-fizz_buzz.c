@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int x = 1;
+	int x;
 
 	while (x <= 100)
 	{
