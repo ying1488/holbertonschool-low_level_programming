@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_rev - function that prints a string reversed.
+ * print_rev -function that prints a string reversed.
  * @s: string to be printed.
  * Return: Always 0.
  */
@@ -19,6 +19,12 @@ void print_rev(char *s)
 	}
 	_putchar('\n');
 }
+
+/**
+ *_strlen - returns the length of a string
+ * @s: string
+ *Return: returns lenght;
+ */
 
 
 int _strlen(char *s)
