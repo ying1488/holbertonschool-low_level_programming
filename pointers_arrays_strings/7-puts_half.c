@@ -31,7 +31,7 @@ _putchar('\n');
 
 /**
  * _strlen - a function that returns the length of a string.
- * @*s: string to be tested.
+ * @s: string to be tested.
  * Return: Always 0.
  */
 
