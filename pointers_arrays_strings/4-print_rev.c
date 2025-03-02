@@ -9,24 +9,20 @@
 
 void print_rev(char *s)
 {
-	int count = 0;
-	int length;
-	char temp;
+	int length = 0;
+	int i;
 
-	while (s[count] != '\0')
+	while (length != '\0')
 	{
-		count = count + 1;
+		length++;
 	}
-
-	count = count - 1;
-	length = count;
-
-	while (count > (length / 2))
+	
+	i = length - 1;
+	
+	while(i >= 0)
 	{
-		temp = s[count];
-		s[count] = s[length - count];
-		s[length - count] = temp;
-
-		count = count - 1;
-	}
+        	_putchar(s[i]);
+        	i--;
+    	}
+	_putchar('\n');
 }
