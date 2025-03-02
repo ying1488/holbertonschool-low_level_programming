@@ -9,26 +9,24 @@
 
 void rev_string(char *s)
 {
-	int i, c, k;
-	char *a, aux;
+	int length = 0;
+    	int i;
+    	char temp;
+    	char *end = s;
 
-	a = s;
+    	/* Calculate string length */
+    	while (end[length] != '\0') {
+        	length++;
+    	}
 
-	while (s[c] != '\0')
-	{
-		c++;
-	}
+    	/* Move end pointer to the last character */
+    	end = s + length - 1;
 
-	for (k = 1; k < c; k++)
-	{
-		a++;
-	}
-
-	for (i = 0; i < (c / 2); i++)
-	{
-		aux = s[i];
-		s[i] = *a;
-		*a = aux;
-		a--;
-	}
+    	/* Swap characters */
+    	for (i = 0; i < length / 2; i++) {
+        	temp = s[i];
+        	s[i] = *end;
+        	*end = temp;
+        	end--;
+    	}
 }
