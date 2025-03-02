@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * int _strlena function that returns the length of a string.
- * s: parameter targeted.
+ * _strlen - a function that returns the length of a string.
+ * *s: string to be tested.
  * Return: Always 0.
  */
 
@@ -13,7 +13,7 @@ int _strlen(char *s)
 
 	for (; *s != '\0'; s++)
 	{
-	 c++;
+		c++;
 	}
 
 	return (c);
