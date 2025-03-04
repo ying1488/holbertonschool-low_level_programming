@@ -1,0 +1,32 @@
+#include"main.h"
+#include<stdio.h>
+#include"string.h"
+
+/**
+*_strchr-functionthatlocatesacharacterinastring.
+*@s:string
+*@c:charactertobelocated
+*Return:Always0.
+*/
+
+char*_strchr(char*s,charc)
+{
+	int i = 0;
+	
+	while(s[i]!='\0')
+	{
+		if(s[i]==c)
+		{
+			return(s+i);
+		}
+
+		if(c=='\0')
+		{
+			return(s);
+		}
+		
+		i++;
+	}
+	
+	return(NULL);
+}
