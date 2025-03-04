@@ -9,15 +9,15 @@
 
 void print_diagsums(int *a, int size)
 {
-    int main_diag_sum = 0;
-    int secondary_diag_sum = 0;
-    int i;
+	int i = 0;
+	int sum1 = 0;
+	int sum2 = 0;
 
-    for (i = 0; i < size; i++)
-    {
-        main_diag_sum += a[i * size + i];
-        secondary_diag_sum += a[i * size + (size - 1 - i)];
-    }
-
-    printf("%d, %d\n", main_diag_sum, secondary_diag_sum);
+	while (i < size)
+	{
+		sum1 += a[i * size + i];
+		sum2 += a[i * size + (size - i - 1)];
+		i++;
+	}
+	printf("%d, %d\n", sum1, sum2);
 }
