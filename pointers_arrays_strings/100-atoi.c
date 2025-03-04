@@ -21,7 +21,7 @@ int _atoi(char *s)
 			sign *= -1;
 		}
 
-		while (s[i] => 48 && s[i] <= 57)
+		while (s[i] >= 48 && s[i] <= 57)
 		{
 			isInt = 1;
 			NotInt = (NotInt * 10) + (s[i] - '0');
