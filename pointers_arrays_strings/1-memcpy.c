@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
-  * _memset - Fill memory with a constant byte
-  * @s: memory area to fill
+  * _memcpy - copies memory area
+  * @n: unsigned int n
   * @dest: dest
   * @src: source
   *
