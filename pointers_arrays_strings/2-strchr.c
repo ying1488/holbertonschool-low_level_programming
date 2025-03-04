@@ -9,24 +9,22 @@
 *Return:Always0.
 */
 
-char*_strchr(char*s,charc)
+char *_strchr(char *s, char c)
 {
 	int i = 0;
-	
-	while(s[i]!='\0')
+
+	while (s[i] != '\0')
 	{
-		if(s[i]==c)
+		if (s[i] == c)
 		{
-			return(s+i);
+			return (s + i);
 		}
 
-		if(c=='\0')
+		if (c == '\0')
 		{
-			return(s);
+			return (s);
 		}
-		
 		i++;
 	}
-	
-	return(NULL);
+	return (NULL);
 }
