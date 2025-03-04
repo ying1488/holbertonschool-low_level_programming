@@ -4,10 +4,10 @@
 /**
   * _memset - Fill memory with a constant byte
   * @s: memory area to fill
-  * @b: constant byte to fill
-  * @n: bytes of memory area to fill
+  * @dest: dest
+  * @src: source
   *
-  * Return: the memory area filled
+  * Return: dest
   */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
