@@ -3,6 +3,7 @@
 /**
   * is_prime_number_step- detemines if number is prime
   *@s: string
+  *@n: number
   * Return: prints number
   */
 
