@@ -1,21 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-/**
- *_strlen - returns the length of a string
- * @s: string
- *Return: returns lenght;
- */
 
-int _strlen(char *s)
-	{
-		int c = 0;
-
-		for (; *s != '\0'; s++)
-		{
-			c++;
-		}
-		return (c);
-	}
 
 /**
   *  _print_rev_recursion- prints a reversed string.
