@@ -1,15 +1,20 @@
 #include "main.h"
 
-void _puts_recursion(char *s)
+/**
+  *  _strlen_recursion- prints the length of a string
+  *@s: string
+  * Return: length of string
+  */
+
+int _strlen_recursion(char *s)
 {
-	if (*s != '\0')
-		{
-			_putchar(*s);
-			_puts_recursion(s + 1);
-		
-		}
-	else 
+	if (*s == '\0')
 	{
-		_putchar('\n');
+		return (0);
+	}
+
+	else
+	{
+		return (1 + _strlen_recursion(s + 1));
 	}
 }
