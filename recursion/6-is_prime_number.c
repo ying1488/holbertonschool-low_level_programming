@@ -38,7 +38,7 @@ int is_prime_number(int n)
 
 	if (n > 1 && (n % 2 != 0))
 	{
-		result = is_prime_number_step(n, s)
+		result = is_prime_number_step(n, s);
 	}
 
 	return (result);
