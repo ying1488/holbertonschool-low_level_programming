@@ -4,7 +4,7 @@
 
 
 /**
-  * main - Prints the number of args
+  * main - Prints the sumof args
   * @argc: argument count
   * @argv: argument vector
   *
@@ -14,11 +14,15 @@
 
 int main(int argc, char *argv[])
 {
-       	if (argc >1)
+	int i;
+	unsigned int k, sum = 0;
+	char *e;
+
+	if (argc > 1)
 	{
-		for(i = 0; i <argc; i++)
+		for (i = 0; i < argc; i++)
 		{
-			e = argv [i];
+			e = argv[i];
 
 			for (k = 0; k < strlen(e); k++)
 			{
@@ -27,16 +31,17 @@ int main(int argc, char *argv[])
 					printf("Error\n");
 					return (1);
 				}
-			
+
 			}
 			sum += atoi(e);
 			e++;
-		}	
-		printf("%d\n",sum);
+		}
+
+		printf("%d\n", sum);
 	}
-	else 
+	else
 	{
 		printf("0\n");
 	}
-	return(0);
-} 
+	return (0);
+}
