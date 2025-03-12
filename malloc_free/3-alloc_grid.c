@@ -6,7 +6,7 @@
  * alloc_grid-function that returns pointer to 2d array.
  * @width: column
  * @height: rows
- * return: 2D array
+ * return: 2d array pointer
  */
 
 int **alloc_grid(int width, int height)
