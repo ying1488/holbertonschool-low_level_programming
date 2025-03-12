@@ -11,20 +11,34 @@
 
 char *_strdup(char *str)
 {
-	int len = strlen(str);
-	char *target = (char *)malloc((len  + 1) * sizeof(char));
+	int a = 0;
+	int i = 0;
+	char *s ;
 
 	if (str == NULL)
 	{
 		return (NULL); /*Handle null input*/
 	}
 
-	if (target == NULL)
+	while (str[i])
+	{
+		i++;
+	}
+
+	s = malloc((sizeof (char) * i) + 1);
+
+	if (s == NULL)
 	{
 		return (NULL); /*Handle allocation failure*/
 	}
 
-	strcpy(target, str); /*Copy the string*/
+	while (a < i)
+	{
+		s[a] = str[a];
+		a++;
+	}
 
-	return (target);
+	s[a] = '\0';
+
+	return (s);
 }
