@@ -4,9 +4,9 @@
 #include <limits.h>
 
  /**
-  * malloc_checked- function allocates memory using malloc
-  * @b: unsigned integer
-  * returns - pointer to the allocated memory
+  *malloc_checked- function allocates memory using malloc
+  *@b: unsigned integer
+  *returns - pointer to the allocated memory
   */
 
 void *malloc_checked(unsigned int b)
