@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 /**
  *main - result of operation
@@ -13,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	int result;
 
-	int (operation)(int, int);
+	int (*operation)(int, int);
 
 	if (argc > 4)
 	{
