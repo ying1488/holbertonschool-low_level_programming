@@ -24,13 +24,17 @@ int (*get_op_func(char *s))(int, int)
 
 	i = 0;
 
-	while (i < 5)
+	while (*ops[i].op != *s)
+
 	{
-		if (strcmp(s, ops[1].op) == 0)
+		i = i + 1;
+
+		if ((i > 4) || (s[1] != '\0'))
 		{
-			return (ops[i].f);
+			printf("Error\n");
+			exit(99);
 		}
-		i++;
+
 	}
-	return (NULL);
+	return (ops[i].f);
 }

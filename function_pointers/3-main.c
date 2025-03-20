@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
 	int (*operation)(int, int);
 
-	if (argc > 4)
+	if (argc < 4)
 	{
 		printf("Error\n");
 		exit(98);
@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
+
 	operation = get_op_func(argv[2]);
 	result = operation(atoi(argv[1]), atoi(argv[3]));
 
