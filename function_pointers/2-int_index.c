@@ -7,6 +7,7 @@
  *@array: array
  *@size: size of array
  *@cmp: compare function
+ *Return: index of i or otherwise
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
