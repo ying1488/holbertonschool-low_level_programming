@@ -95,6 +95,6 @@ void print_float(va_list *list)
 void print_string(va_list *list)
 {
 	char *s = va_arg(*list, char *);
+
 	printf("%s", s);
-	
 }
