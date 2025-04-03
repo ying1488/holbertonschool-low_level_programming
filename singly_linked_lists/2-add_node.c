@@ -1,22 +1,36 @@
 #include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
- *list_len - functions that returns the number of elements
- *@h: pointer to the list_k
- *Return: number of elements
- */ 
+ *add_node - adds a new node at the begining of a list
+ *@head: pointer to the list_k
+ *@str: string
+ *Return: the address of the new element
+ */
 
-size_t list_len(const list_t *h)
+list_t *add_node(list_t **head, const char *str)
 {
-	size_t number = 0;
+	list_t *new;
+	int i = 0; /*pointer*/
 
-	while (h)
+	new = malloc(sizeof(list_t));
+	if (new == NULL)
 	{
-		number ++;
-		h = h->next;
+		printf("Error\n");
+		return (NULL);
 	}
 
-	return (number);
+	while (str[i] != '\0')
+	{
+		i = i + 1;
+	}
 
+	new->str = strdup(str);
+	new->len = i;
+	new->next = *head;/*linking new node to previous node*/
+	*head = new; /*return pointer to new element*/
+
+	return (new);
 }
