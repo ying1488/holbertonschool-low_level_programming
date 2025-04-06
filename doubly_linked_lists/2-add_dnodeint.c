@@ -12,10 +12,10 @@
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistsint_t *newNode;
+	dlistint_t *newNode;
 
 	/**create a new node**/
-	newNode = malloc(sizeof(dlistsint));
+	newNode = malloc(sizeof(dlistint_t));
 
 	if (newNode == NULL)
 		return (NULL);
@@ -23,4 +23,18 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	newNode->n = n;
 	/**point to the head node**/
 	newNode->next = *head;
+
+	/*If the list is not empty. set prev pointer of old head*/
+
+	if(*head != NULL)
+	{
+		(*head)->prev = newNode;
+	}
+
+	newNode->prev = NULL;
+	/**Updates the original head pointer to now point to the newNode*/
+	/**makes newNode the new head of the list.*/
+	*head = newNode;
+
+	return (newNode);
 }
