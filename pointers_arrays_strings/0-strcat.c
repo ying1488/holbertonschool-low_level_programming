@@ -1,12 +1,12 @@
 # include "main.h"
 
 /**
- * *_strcat - apped src string to the dest sting 
+ * *_strcat - apped src string to the dest sting
  * @dest: input
  * @src: input
  * Return: char
  *
- */ 
+ */
 
 
 char *_strcat(char *dest, char *src)
@@ -21,13 +21,13 @@ char *_strcat(char *dest, char *src)
 		dest_length++;
 	}
 
-	while (*src != '\0')	
+	while (*src != '\0')
 	{
 		*dest = *src;
 		dest++;
 		src++;
 		dest_length++;
-		src_length++;	
+		src_length++;
 	}
 	*dest = *src;
 	dest = p;
