@@ -31,7 +31,7 @@ char *_strncat(char *dest, char *src, int n)
 		src_length++;
 	}
 	*dest = *src;
-	dest = p; 
+	dest = p;
 	src = src - n;
-       return (p);	
+	return (p);
 }
