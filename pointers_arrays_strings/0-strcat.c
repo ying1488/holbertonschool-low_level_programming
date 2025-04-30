@@ -32,5 +32,5 @@ char *_strcat(char *dest, char *src)
 	*dest = *src;
 	dest = p;
 	src = src - src_length;
-	retun (p);
+	return (p);
 }
